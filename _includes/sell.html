@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col s12 m3 offset-m5">
+            <div style="max-height: 90%; height: 88%; top: 5% !important;"  id="sellItem" class="modal modal-fixed-footer"> 
+                <div class="modal-content">
+                    <p class="center-align"><span class="customf1">POS</span></p>
+                    <p class="center-align" style="font-variant: petite-caps">
+                        Jflorida Marketing Inc. <br>
+                        Barangay 2, Balagtas St. Catanauan, Quezon <br>
+                        Serial No: POS01-KRI-SN-JFLO
+                    </p>
+                    <p>
+                        Discount: <span id='discount'>0</span>% <br>
+                        Total: <span id="totalAmount">0</span> Php
+                    </p>
+                    <!-- account -->
+                    <input type="text" id="accountName" onchange="parseStringAccount(this.value)" placeholder="Account" list="autoAccount">
+                    <datalist id="autoAccount">
+                        
+                    </datalist>
+                    <!-- product -->
+                    <input type="text" id="productCode" onchange="parseStringInventory(this.value)" placeholder="Product" list="autoProduct">
+                    <datalist id="autoProduct">
+                        
+                    </datalist>
+                    <!-- quantity -->
+                    <input type="text" id="quantity" placeholder="No stock left">
+                    <a onclick="rawInventoryDocsS()" class="btn green waves-effect waves-light">Sell</a>
+                    <br>
+                    <br>
+                    <ul id="collectionDisplayS" class="collection">
+                        
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a onclick="receipt()" class="waves-effect waves-green btn-flat ">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+---
+layout: account
+---
+<main>
+	
+	<div class="container">
+	    <div class="row">
+            <div id="addAccount" class="modal modal-fixed-footer"> 
+                <div class="modal-content">
+            			<div class="col s12">
+            			                    <h5>ACCOUNT FORM</h5>
+            				<label for="name">Account Name</label>
+                    		<input class="validate" id="name" type="text">
+            			</div>
+	                    <div class="col s12">
+	                    	<label for="bName">Business Name</label>
+	                    	<input class="validate" id="bName" type="text">
+	                    </div>
+                    	<div class="col s12">
+                    		<label for="contact">Contact Number</label>
+		                	<input class="validate" id="contact" type="text">
+                    	</div>
+                    	<div class="col s12">
+                    		<label for="address">Address</label>
+	                    	<input class="validate" id="address" type="text">
+                    	</div>
+                    	<div class="col s12">
+                    		<label for="discount">Discount</label>
+	                    	<input class="validate" id="discount" type="text">
+                    	</div>
+                    	<div class="col s12">
+                    		<label for="aT">Account Type</label>
+	                    	<input class="validate" id="aT" type="text">
+                    	</div>
+	                </div>
+	                <div class="modal-footer">
+	                    <a id="accountNew" onclick="getVal()" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+	                </div>
+	            </div>
+	    </div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<h4 class="center-align grey-text" style="font-variant: small-caps;">
+					<span id="accountLength">0</span> Accounts in jflorida <br>
+				</h4>	
+			</div>
+		</div>
+		<div id="accountDisplay" class="row">
+		
+			<!-- Generate End -->
+		</div>
+	</div>
+</main>

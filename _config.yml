@@ -1,0 +1,9 @@
+# Site settings
+title: Jflorida Authentic Bag Design
+email: peiwebdev@gmail.com
+description:  
+baseurl: "" # the subpath of your site, e.g. /blog
+url: ""
+port: 1377
+# Build settings
+markdown: kramdown

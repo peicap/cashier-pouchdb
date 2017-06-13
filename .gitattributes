@@ -1,0 +1,5 @@
+*.lnk linguist-vendored
+*.bat linguist-vendored
+docs/_sass/* linguist-vendored
+docs/css/* linguist-vendored
+docs/* linguist-documentation=false

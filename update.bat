@@ -1,3 +1,1 @@
-@echo off
-start  cd ../&& git pull
-pause
+start  git pull

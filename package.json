@@ -1,0 +1,33 @@
+{
+  "name": "metax-cashier",
+  "version": "1.0.0",
+  "description": "Metax-cashier, a cash register that keeps track of sales and inventory. Made with love and Javascript.",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peicap/metax-cashier.git"
+  },
+  "keywords": [
+    "metax",
+    "pei",
+    "capili",
+    "pei",
+    "capili",
+    "cashier",
+    "cashier",
+    "register",
+    "dependencies"
+  ],
+  "author": "Pei Capili",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peicap/metax-cashier/issues"
+  },
+  "homepage": "https://github.com/peicap/metax-cashier#readme"
+}

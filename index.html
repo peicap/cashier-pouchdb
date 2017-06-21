@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Metax Cashier: PouchDB Project</title>
+	<link rel="stylesheet" href="/css/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="/" class="navbar-brand">Metax Cashier</a>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-4">
+				<h3>Dashboard</h3>
+				<p>Inventory</p>
+				<div class="input-group">
+				  <input id="new-product-name" type="text" class="form-control disabled" placeholder="New product" aria-describedby="basic-addon1">
+					<input id="new-product-quantity" type="text" class="form-control disabled" placeholder="Quantity" aria-describedby="basic-addon1">
+					<input id="new-product-price" type="text" class="form-control disabled" placeholder="Price" aria-describedby="basic-addon1">
+				  <span class="input-group-addon" id="basic-addon">
+				  	<a href="#" onclick="nproduct()">
+				  		<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+				  	</a>
+				  </span>
+				</div>
+				<br>
+				<ul id="list-group-product" class="list-group">
+				</ul>
+				<p>Customers</p>
+				<div class="input-group">
+				  <input id="new-customer-val" type="text" class="form-control disabled" placeholder="New customer" aria-describedby="basic-addon1">
+					<span class="input-group-addon" id="basic-addon">
+						<a onclick="ncustomer()" href="#" id="new-customer-btn" class="text-primary">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+						</a>
+					</span>
+				</div>
+				<br>
+				<ul id="list-group-customer" class="list-group">
+				</ul>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<h3>Cashier</h3>
+				<p>New transaction</p>
+				<div class="input-group">
+				  <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+				  <input id="new-trans-name" type="text" class="form-control" placeholder="Customer" aria-describedby="basic-addon1" list="awes-trans-name" onchange="awestransnameselect(this.value)">
+				  <datalist id="awes-trans-name">
+				  	
+				  </datalist>
+				</div>
+				<br>
+				<div class="input-group">
+				  <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></span>
+				  <input id="new-trans-product" type="text" class="form-control disabled" placeholder="Product" aria-describedby="basic-addon1" list="awes-trans-product" onchange="awestransproductselect(this.value)">
+				  <datalist id="awes-trans-product">
+				  	
+				  </datalist>
+				</div>
+				<br>
+				<div class="input-group">
+				  <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></span>
+				  <input id="trans-quantity" type="text" class="form-control" placeholder="Quantity" aria-describedby="basic-addon1">
+				</div>
+				<br>
+				<input onclick="getprice()" class="btn btn-default" type="submit" value="Submit">
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<h3>Transaction</h3>
+				<p id="account-charging"></span></p>
+				<p id="account-last-transaction"></p>
+				<h3>Receipt</h3>
+				<ul id="list-group-receipt" class="list-group">
+				</ul>
+				<h3>$ <span id="account-new-amount">0</span></h3>
+				<input onclick="transactionsend()" class="btn btn-default" type="submit" value="Submit">
+			</div>
+	</div>
+</body>
+<script src="/jquery-v3.2.1.js"></script>
+<script src="/dist/pouchdb-6.2.0.min.js"></script>
+<script src="/dist/pouchdb-find.min.js"></script>
+<script src="/dist/awesomplete.js"></script>
+<script src="/app.js"></script>
+<script src="/css/bootstrap/js/bootstrap.min.js"></script>
+</html>

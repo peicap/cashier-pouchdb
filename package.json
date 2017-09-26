@@ -7,6 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
+    "start": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,5 +30,10 @@
   "bugs": {
     "url": "https://github.com/peicap/metax-cashier/issues"
   },
-  "homepage": "https://github.com/peicap/metax-cashier#readme"
+  "homepage": "https://github.com/peicap/metax-cashier#readme",
+  "dependencies": {
+    "lite-server": "^2.3.0",
+    "pouchdb": "^6.3.4",
+    "requirejs": "^2.3.5"
+  }
 }
